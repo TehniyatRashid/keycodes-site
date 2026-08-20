@@ -1,0 +1,6 @@
+{
+  "name": "Datacore Hero Section",
+  "description": "A premium, full-screen hero section with an immersive background video, responsive typography, and an interactive demo booking system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: "Manrope", sans-serif;
+  --font-cabin: "Manrope", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+  --font-inter: "Manrope", sans-serif;
+  --font-montserrat: "Manrope", sans-serif;
+  --font-unbounded: "Manrope", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+
+  --color-brand-purple: #7b39fc;
+  --color-dark-purple: #2b2344;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  --animate-infinite-scroll-reverse: infinite-scroll-reverse 40s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes infinite-scroll-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+}
+
+/* Custom scrollbars and generic modern body styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbars but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--font-manrope);
+  background-color: #0b0813;
+}

@@ -1,0 +1,1 @@
+export const GOOGLE_SCRIPT_URL = (import.meta as any).env.VITE_GOOGLE_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbzHQL-fmdJIRL64TpntKxki6SC7aD9Vx-5m58rcqf3oTxdq4m7k6tzNI0QkD9rDaVvD8g/exec";
